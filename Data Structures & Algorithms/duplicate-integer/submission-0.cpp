@@ -1,0 +1,11 @@
+class Solution {
+public:
+    bool hasDuplicate(vector<int>& nums) {
+        int n=nums.size();
+        unordered_set<int> mySet;
+        for(int i=0;i<n;i++){
+            mySet.insert(nums[i]);
+        }
+        return !(mySet.size()==n);
+    }
+};
